@@ -316,6 +316,7 @@ background: linear-gradient(
   appearance: auto;
 
 } 
+.sidaddress-icon{width:48px;height: 48px;background-color: white;}
 .accordion-button:focus{
   box-shadow: none!important;
 }
@@ -332,16 +333,21 @@ background: linear-gradient(
  .link-icon:hover {
   transform: scale(1.2);
 
-}.form-select,.form-control{background-color: #fbf9fa;}
-.form-select:focus,
-.form-select:hover {box-shadow: 0 0 5px rgba(74, 5, 170, 0.5) !important;
-  border-color: #4d179a;
 }
-.form-select:focus {
-  box-shadow: 0 0 5px rgba(77, 23, 154, 0.5);
-  border-color: #4d179a;
+.send-message .form-select{background-color: #fbf9fa !important;}
+.send-message .form-control{background-color: #fbf9fa !important;}
+
+
+  .form-control:focus,
+.form-select:focus{
+  box-shadow: 0 0 0 0.2rem rgba(74, 5, 170, 0.5) !important;
+  border-color: #4d179a !important;
 }
-.form-control:focus{box-shadow: 0 0 5px rgba(74, 5, 170, 0.5) !important;!important;border-color:#4d179a!important}
+.form-check-input:checked { background-color: #4d179a;   /* لون الخلفية */
+  border-color: #4d179a;box-shadow: none;}
+
+
+
 .footer{background-color:#4d179a}
 .footer-icon{width: 40px; height: 40px; background-color:#a684ff;}
 .footer p{color:#ddd6ff ;}
