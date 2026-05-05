@@ -68,12 +68,17 @@ body {
   width: 100%;
 }
 
-.mega-menu {
+/* .mega-menu {
   width: 1200px;
-  transform: translateX(-50%);
+   transform: translateX(-50%); 
   border-radius: 12px;
   border: none;
 
+} */
+
+.mega-menu {
+  max-height: 80vh;   /* أقصى ارتفاع (حسب الشاشة) */
+  overflow-y: auto;   /* يظهر scroll لما المحتوى يزيد */
 }
 
 
@@ -112,13 +117,7 @@ body {
  height: 80px;width: 260px;
   color: white;}
   .resourses{border:1px solid plum; }
-  .mega-menu {
-  width: min(1100px, 90vw);  /* لا يتعدى الشاشة */
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 12px;
-  border: none;
-}
+  
   
   
   
