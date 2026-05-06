@@ -11,9 +11,14 @@ h6 {
 body {
 
   font-family: 'Exo', sans-serif;
+
+  position: relative;
+
 }
 
-
+body {
+  overflow-x: hidden;
+}
 
 :root { 
     --main-color: #7f22fe;
@@ -68,17 +73,9 @@ body {
   width: 100%;
 }
 
-.mega-menu {
-  /* width: 1200px; */
-  /* transform: translateX(-50%); */
-  /* border-radius: 12px; */
-  /* border: none; */
-
-}
-
 mega-menu {
 overflow-y: auto;
-max-height: 800vh;
+max-height:80vh;
 }
 
 
@@ -112,9 +109,9 @@ max-height: 800vh;
 .newyork {
   background: linear-gradient(rgba(70, 0, 180, 0.75), rgba(70, 0, 180, 0.75)),
             url('../images/photo-1522083165195-3424ed129620.jpg');
-  background-size: cover;
+  background-size: cover; 
   background-position: center;
- height: 80px;width: 260px;
+ height: 80px;width: 100%;
   color: white;}
   .resourses{border:1px solid plum; }
   .mega-menu {
@@ -124,9 +121,29 @@ max-height: 800vh;
   border-radius: 12px;
   border: none;
 }
-  
-  
-  
+  @media (max-width: 991px) {
+  .navbar .dropdown-menu.mega-menu {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    border-radius: 0 !important;
+    position: static !important;
+  }
+}
+  @media (min-width: 992px) {
+  .navbar .dropdown-menu.mega-menu {
+    position: absolute;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+
 
 
 .hero {
@@ -206,7 +223,7 @@ background: linear-gradient(
 .heart{color: #374151;}
 .heart:hover i{color: red;}
 .new-custom{background-color: green;}
-.btn-schedule{background-color:#ede9fe ;color:#7008e7 ;}
+.btn-schedule{background-color:#ede9fe ;color:#8a67ba ;}
 
 
 
@@ -239,6 +256,10 @@ background: linear-gradient(
 .badge-box{width: 146px;height: 103px;background-color: var(--back-ground);position: absolute; 
       bottom: -30px;
       left: -20px;
+      background: #fff;}
+      .badge-box2{width: 146px;height: 103px;background-color: var(--back-ground);position: absolute; 
+      bottom: -30px;
+     right: -20px;
       background: #fff;}
 .badge-box h5{font-size: 24px;font-weight: bold;color: var(--main-color);}
 .custom-btn{ transition: 0.3s;
@@ -346,7 +367,8 @@ background: linear-gradient(
   .form-control:focus,
 .form-select:focus{
   box-shadow: 0 0 0 0.2rem rgba(74, 5, 170, 0.5) !important;
-  border-color: #4d179a !important;
+  border-color: 
+   !important;
 }
 .form-check-input:checked { background-color: #4d179a;   /* لون الخلفية */
   border-color: #4d179a;box-shadow: none;}
